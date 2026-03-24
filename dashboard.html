@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            width: 380px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 15px 35px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .predict-btn {
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            color: white;
+        }
+
+        .predict-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .logout-btn {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+        }
+
+        .logout-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="icon">👨‍⚕️</div>
+            <h2>Doctor Dashboard</h2>
+
+            <a href="/home">
+                <button class="btn predict-btn">🔍 Go to Prediction</button>
+            </a>
+
+            <a href="/logout">
+                <button class="btn logout-btn">🚪 Logout</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
